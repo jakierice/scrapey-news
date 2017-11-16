@@ -8,28 +8,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Web Scraping</title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+	<link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-	<div class="container gallery-container">
+
+	<div class="header">
 		<h1>Sourced from
 			<a target="blank" href="https://www.theguardian.com/world/series/eyewitness">The Guardian</a>
 		</h1>
-		<div class="main">{{{body}}}</div>
 	</div>
+	<div class="main content-container">{{{body}}}</div>
+
+	{{!-- SCRIPTS --}}
+
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-
-	<!-- this file was missing -->
-	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-	<script type="text/javascript" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
-
-	<!-- this file was moved after the jQuery Datatables library was laoded -->
-	<script type="text/javascript" src="https://cdn.datatables.net/1.10.9/js/dataTables.bootstrap.min.js"></script>
 	<script src="app.js"></script>
 </body>
 

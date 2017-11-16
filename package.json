@@ -1,31 +1,35 @@
 {
-  "name": "scrapey-news",
-  "version": "1.0.0",
-  "description": "News aggregate app that lets users comment on articles.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jakierice/scrapey-news.git"
-  },
-  "author": "Jakie W. Rice <jakie.rice@gmail.com> (http://www.jakierice.com)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jakierice/scrapey-news/issues"
-  },
-  "homepage": "https://github.com/jakierice/scrapey-news#readme",
-  "dependencies": {
-    "axios": "^0.17.1",
-    "body-parser": "^1.18.2",
-    "cheerio": "^1.0.0-rc.2",
-    "exphbs": "^1.1.0",
-    "express": "^4.16.2",
-    "express-handlebars": "^3.0.0",
-    "handlebars": "^4.0.11",
-    "mongoose": "^4.13.3",
-    "morgan": "^1.9.0",
-    "request": "^2.83.0"
-  }
+	"name": "scrapey-news",
+	"version": "1.0.0",
+	"description": "News aggregate app that lets users comment on articles.",
+	"main": "index.js",
+	"scripts": {
+		"css": "node-sass --include-path scss sass/style.scss public/assets/style.css",
+		"watch": "nodemon -e scss -x \"npm run css\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jakierice/scrapey-news.git"
+	},
+	"author": "Jakie W. Rice <jakie.rice@gmail.com> (http://www.jakierice.com)",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jakierice/scrapey-news/issues"
+	},
+	"homepage": "https://github.com/jakierice/scrapey-news#readme",
+	"dependencies": {
+		"axios": "^0.17.1",
+		"body-parser": "^1.18.2",
+		"cheerio": "^1.0.0-rc.2",
+		"exphbs": "^1.1.0",
+		"express": "^4.16.2",
+		"express-handlebars": "^3.0.0",
+		"handlebars": "^4.0.11",
+		"mongoose": "^4.13.3",
+		"morgan": "^1.9.0",
+		"request": "^2.83.0"
+	},
+	"devDependencies": {
+		"node-sass": "^4.5.3"
+	}
 }
