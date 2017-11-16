@@ -9,20 +9,23 @@ const ArticleSchema = new Schema({
 	// `title` is required and of type String
 	title: {
 		type: String,
-		required: false
+		required: false,
+		unique: true
 	},
 	// `link` is required and of type String
-	link: {
+	url: {
+		type: String,
+		required: false,
+		unique: true
+	},
+	description: {
 		type: String,
 		required: false
 	},
-	desc: {
+	publishDate: {
 		type: String,
-		required: false
-	},
-	pubDate: {
-		type: String,
-		required: false
+		required: false,
+		unique: true
 	},
 	photo: {
 		type: String,
