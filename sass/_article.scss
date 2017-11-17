@@ -1,0 +1,33 @@
+.article {
+	margin: $m-size 0;
+}
+
+.article__header {
+	align-items: center;
+	background: $grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: $s-size $l-size;
+	text-shadow: 0 0 0.03rem black;
+
+	@media (min-width: $desktop-breakpoint) {
+		flex-direction: row;
+	}
+}
+
+.article__title {
+	color: $white-blue;
+	margin: $s-size;
+}
+
+.article__body {
+	background: white;
+	border: 1px solid $grey;
+	padding: $s-size $l-size;
+	transition: padding 0.5s;
+
+	&:hover {
+		padding: $xl-size $l-size;
+	}
+}

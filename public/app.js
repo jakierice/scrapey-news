@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	console.log('ready!');
-	$('.save-button').click(function() {
+	$('.button--save-button').click(function() {
 		var articleId = $(this).attr('data-id');
 
 		var articleInfo = {

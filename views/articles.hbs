@@ -1,14 +1,17 @@
-<div>
-	<h1>Articles</h1>
+<div class="content-container">
 	{{#each articles}}
-	<div>
-		<a href="{{this.link}}" id="{{@index}}link" data-link="{{this.link}}">
-			<h2 id="{{@index}}title" data-title="{{this.title}}">{{this.title}}</h2>
-		</a>
-
-		<button class="btn save-button" data-id="{{@index}}">Save Article</button>
+	<div class="article">
+		<div class="article__header">
+			<a href="{{this.link}}" id="{{@index}}link" data-link="{{this.link}}">
+				<h2 class="article__title" id="{{@index}}title" data-title="{{this.title}}">{{this.title}}</h2>
+			</a>
+			<button class="button button--save-button" data-id="{{@index}}">Save Article</button>
+		</div>
+		<div class="article__body">
+			<p class="article__description" id="{{@index}}desc" data-desc="{{this.desc}}">
+				{{this.desc}}</p>
+			<small class="publish-date" id="{{@index}}pubDate" data-pubDate="{{this.pubDate}}">{{this.pubDate}}</small>
+		</div>
 	</div>
-	<p id="{{@index}}desc" data-desc="{{this.desc}}">{{this.desc}}</p>
-	<small id="{{@index}}pubDate" data-pubDate="{{this.pubDate}}">{{this.pubDate}}</small>
 	{{/each}}
 </div>

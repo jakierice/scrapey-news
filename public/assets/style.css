@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed|Fjalla+One");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -170,8 +171,78 @@ td,
 th {
   padding: 0; }
 
+* {
+  box-sizing: content-box; }
+
 body {
-  background: red; }
+  background: #eeeeff;
+  font-family: "Barlow Condensed", sans-serif; }
+
+p {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fjalla One", sans-serif;
+  margin: 0; }
+
+.content-container {
+  margin: 0 auto;
+  width: 100%; }
+  @media (min-width: 42rem) {
+    .content-container {
+      width: 80%; } }
 
 .header {
-  background: black; }
+  align-items: center;
+  background: #d16014;
+  display: flex;
+  height: 4rem; }
+
+.header__brand {
+  margin: 0 2rem;
+  color: white; }
+  .header__brand a {
+    text-decoration: none; }
+
+.article {
+  margin: 1.6rem 0; }
+
+.article__header {
+  align-items: center;
+  background: #4d5057;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  text-shadow: 0 0 0.03rem black; }
+  @media (min-width: 42rem) {
+    .article__header {
+      flex-direction: row; } }
+
+.article__title {
+  color: #eeeeff;
+  margin: 1.2rem; }
+
+.article__body {
+  background: white;
+  border: 1px solid #4d5057;
+  padding: 1.2rem 2rem;
+  transition: padding 0.5s; }
+  .article__body:hover {
+    padding: 2.4rem 2rem; }
+
+.button {
+  background: #f6ae2d;
+  border: none;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  transition: 0.4s;
+  width: 8rem; }
+
+.button--save-button:hover {
+  padding: 1.6rem; }
